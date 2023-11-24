@@ -1,4 +1,6 @@
-﻿namespace Akira.API.Akira.Domain.Models;
+﻿using System.Text.Json.Serialization;
+
+namespace Akira.API.Akira.Domain.Models;
 
 public class Product
 {
@@ -12,13 +14,16 @@ public class Product
     
     //Categoria:
     public int? CategoryId { get; set; }
+    [JsonIgnore]
     public Category? Category { get; set; }
     
     //Subcategoria:
     public int? SubcategoryId { get; set; }
+    [JsonIgnore]
     public Subcategory? Subcategory { get; set; }
     
     //Franquicia:
     public int? FranchiseId { get; set; }
+    [JsonIgnore]
     public Franchise? Franchise { get; set; }
 }

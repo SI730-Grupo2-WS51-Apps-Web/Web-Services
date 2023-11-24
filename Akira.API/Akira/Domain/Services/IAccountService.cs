@@ -6,7 +6,7 @@ public interface IAccountService
 {
     Task<IEnumerable<Account>> ListAsync();
     Task<Account> GetAccountByIdAsync(int id);
-    Task<AccountResponse> SaveAsync(Account account);
+    Task<AccountResponse> SaveAsync(Account receivedAccount);
     Task<AccountResponse> UpdateAsync(int id, Account account);
     Task<AccountResponse> DeleteAsync(int id);
     Task<Account> GetAccountByCredentialsAsync(string email, string password);

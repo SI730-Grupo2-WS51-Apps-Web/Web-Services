@@ -25,6 +25,9 @@ public class OrderResource
     public int SelectedMethod {get;set;}
     public PaymentMethod? PaymentMethod {get; set;}
     
+    public int StatusId {get;set;}
+    public OrderStatus? Status {get; set;}
+    
     public class stringData{
         public string Name {get;set;}
         public string Value {get;set;}

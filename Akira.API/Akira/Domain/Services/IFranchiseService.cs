@@ -6,7 +6,5 @@ public interface IFranchiseService
 {
     Task<IEnumerable<Franchise>> ListAsync();
     Task<FranchiseResponse> SaveAsync(Franchise franchise);
-    Task<FranchiseResponse> UpdateAsync(int id, Franchise franchise);
-    Task<FranchiseResponse> DeleteAsync(int id);
 }
 

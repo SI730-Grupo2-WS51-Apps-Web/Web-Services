@@ -30,7 +30,7 @@ public class ProductImageController: ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(ProductImageResource resource)
+    public async Task<IActionResult> Create([FromBody]ProductImageResource resource)
     {  
         var image = _mapper.Map<ProductImageResource, ProductImage>(resource);
 

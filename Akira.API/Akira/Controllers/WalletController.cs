@@ -30,7 +30,7 @@ public class WalletController: ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(WalletResource resource) 
+    public async Task<IActionResult> Create([FromBody]WalletResource resource) 
     {
         var wallet = _mapper.Map<WalletResource, Wallet>(resource);
 

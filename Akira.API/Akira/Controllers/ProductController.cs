@@ -43,7 +43,7 @@ public class ProductController: ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(ProductResource resource) 
+    public async Task<IActionResult> Create([FromBody]ProductResource resource) 
     {
         var product = _mapper.Map<ProductResource, Product>(resource);
         var response = await _productService.SaveAsync(product);

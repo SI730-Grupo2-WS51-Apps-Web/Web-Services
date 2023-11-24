@@ -22,7 +22,7 @@ public class AllianceController: ControllerBase
     public async Task<IEnumerable<AllianceResource>> GetAllAsync()
     {
         var alliances = await _allianceService.ListAsync();
-        //Convierte alliance en AllianceResource
+        //Convierte alliance en AllianceResponse
         var resources = _mapper.Map<IEnumerable<Alliance>, IEnumerable<AllianceResource>>(alliances);
         return resources;
     }

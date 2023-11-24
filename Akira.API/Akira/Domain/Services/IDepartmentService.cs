@@ -6,7 +6,6 @@ public interface IDepartmentService
 {
     Task<IEnumerable<Department>> ListAsync();
     Task<DepartmentResponse> SaveAsync(Department department);
-    Task<DepartmentResponse> UpdateAsync(int id, Department department);
-    Task<DepartmentResponse> DeleteAsync(int id);
+    Task<Department> GetDepartmentByIdAsync(int id);
 }
 

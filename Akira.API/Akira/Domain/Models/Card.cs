@@ -1,4 +1,6 @@
-﻿namespace Akira.API.Akira.Domain.Models;
+﻿using System.Text.Json.Serialization;
+
+namespace Akira.API.Akira.Domain.Models;
 
 public class Card
 {
@@ -9,5 +11,6 @@ public class Card
     public string CardYearExpiration { get; set; }
     public string CardCVV { get; set; }
     public int AccountId { get; set; }
+    [JsonIgnore]
     public Account? Account { get; set; }
 }

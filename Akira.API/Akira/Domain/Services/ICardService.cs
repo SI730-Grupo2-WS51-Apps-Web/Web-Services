@@ -7,5 +7,4 @@ public interface ICardService
     Task<IEnumerable<Card>> ListAsync();
     Task<Card> SaveAsync(Card category);
     Task<Card> UpdateAsync(int id, Card category);
-    Task<Card> DeleteAsync(int id);
 }

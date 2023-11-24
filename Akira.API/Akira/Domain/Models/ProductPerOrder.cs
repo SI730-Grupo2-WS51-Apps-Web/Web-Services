@@ -10,7 +10,7 @@ public class ProductPerOrder
     public Product? Product {get;set;}
     
     [Key]
-    [Column(Order=0)]
+    [Column(Order=1)]
     public int OrderId {get;set;}
     public Order? Order {get;set;}
     

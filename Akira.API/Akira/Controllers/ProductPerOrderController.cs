@@ -45,7 +45,7 @@ public class ProductPerOrderController: ControllerBase
     }
     
     [HttpPost]  
-    public async Task<IActionResult> Create(ProductPerOrderResource resource)
+    public async Task<IActionResult> Create([FromBody]ProductPerOrderResource resource)
     {
         var order = _mapper.Map<ProductPerOrderResource, ProductPerOrder>(resource);
 

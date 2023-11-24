@@ -6,11 +6,5 @@ public interface IAllianceService
 {
     Task<IEnumerable<Alliance>> ListAsync();
     Task<Alliance> GetAllianceByIdAsync(int id);
-
-    Task<AllianceResponse> SaveAsync(Alliance alliance);
-    Task<AllianceResponse> UpdateAsync(int id, Alliance alliance);
-    Task<AllianceResponse> DeleteAsync(int id);
-    Task<Account> GetAllianceByUrlsAsync(string url);
-
 }
 
